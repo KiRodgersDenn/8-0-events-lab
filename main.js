@@ -18,7 +18,7 @@ colors.forEach((color) => {
 });
 
 
-const cells = document.querySelectorAll(".cell");
+let cells = document.querySelectorAll(".cell");
 
 
 cells.forEach((cell) => {
