@@ -13,7 +13,7 @@ let selectedColor = document.querySelector("#current-color");
 
 colors.forEach((color) => {
   color.addEventListener("click", () => {
-    selectedColor.setAttribute("style", `background: ${color.style.background}`);
+    selectedColor.style.backgroundColor = event.target.style.backgroundColor;
   });
 });
 
@@ -23,6 +23,6 @@ let cells = document.querySelectorAll(".cell");
 
 cells.forEach((cell) => {
   cell.addEventListener("click", () => {
-    cell.setAttribute("style", `background: ${selectedColor.style.background}`);
+    event.target.style.backgroundColor = selectedColor.style.backgroundColor;
   });
 });
